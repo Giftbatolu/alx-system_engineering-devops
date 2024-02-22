@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-# Display "Best School" ten times using until loop.
-
-b=1
-until ((b > 10))
-do
-	echo "Best School"
-	((b++))
-done
