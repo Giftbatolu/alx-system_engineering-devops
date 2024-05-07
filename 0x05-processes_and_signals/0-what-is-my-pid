@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Display information about it's owm pid
+
+echo $$
