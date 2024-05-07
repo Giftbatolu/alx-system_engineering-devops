@@ -2,6 +2,6 @@
 # Displays a list of currently running processes shows all processes including those without TTY
 # Display in user-oriented format with process hierarchy
 
-ps -ux
+ps -aux
 
 
