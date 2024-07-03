@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A script that configure ~/.ssh/config to use private key ~/.ssh/school and refuse authentication using a password
+
+Host ubuntu@52.201.150.212
+    IdentityFile ~/.shh/school
+    PasswordAuthentication no
