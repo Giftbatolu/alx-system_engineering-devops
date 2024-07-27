@@ -6,9 +6,8 @@
 # Change user to nginx
 sed -i 's/#user www-data/user nginx/' /etc/nginx/nginx.conf
 
-# Change the ownership and group of the directory
-chown -R nginx:nginx /etc/nginx
-chown -R nginx:nginx /var/log/nginx /var/www/html
+# Change the permission of /etc/nginx/nginx.conf directory
+chmod 644 /etc/nginx/nginx.conf
 
 # Change listening port to 8080
 sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
@@ -16,7 +15,7 @@ sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 # Test the configuration
 nginx -t
 
-# kill aoache2 process if runing on port 8080
+# kill apache2 process if runing on port 8080
 pkill apache2
 
-service nginx restart
+sudo -u nginx service nginx start
