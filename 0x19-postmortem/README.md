@@ -1,7 +1,7 @@
 Summary
 	On July 17th 2024, ICARE website experienced an unexpected outage for 2 hours resulting in user being enable to access therapy session and resources. The outageaffected 38% of user of ICARE website. The incident was caused by a misconfiguration of the database updates leading to a cascading failure of dependent service.
-Timeline
-	* 2:00pm - Database update deployed.
+##Timeline
+	. **2:00pm** - Database update deployed.
 	* 2:10pm - User report an issues when accessing the therapy session of ICARE website.
 	* 2:12pm - The Engnieering team was notified and investigation begins.
 	* 2:15pm - Checking the network connection, if it  was the cause of the outage.
